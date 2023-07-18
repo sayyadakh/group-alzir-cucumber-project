@@ -9,4 +9,4 @@ Feature:Users should be able to login
 
   Scenario: Login as driver
     When user enters the driver information
-    Then user should be able to login
+    Then user should be able to login by verifying the Dashboard title

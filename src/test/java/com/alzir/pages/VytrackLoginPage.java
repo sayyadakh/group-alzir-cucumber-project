@@ -12,5 +12,22 @@ public class VytrackLoginPage {
     }
 
 
+    @FindBy(id = "_submit")
+    public WebElement loginButton;
+
+    @FindBy(id = "prependedInput")
+    public WebElement inputUsername;
+
+    @FindBy(id = "prependedInput2")
+    public WebElement inputPassword;
+
+
+    public  void login(String username, String password){
+        this.inputUsername.sendKeys(username);
+        this.inputPassword.sendKeys(password);
+        this.loginButton.click();
+    }
+
+
 
 }
