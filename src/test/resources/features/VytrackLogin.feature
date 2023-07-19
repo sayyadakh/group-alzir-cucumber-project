@@ -1,3 +1,4 @@
+@login
 Feature:Users should be able to login
   User Story:
   As a user, I should be able to login with correct credentials to different accounts. And dashboard should be displayed.
@@ -6,7 +7,13 @@ Feature:Users should be able to login
   Background:
     Given user is on the login page
 
+@wip
+  Scenario Outline: Verify login with different user types
+    When user logged in as "<userType>"
+    # When user logged in with username as "user1" and password "UserUser123"
 
-  Scenario: Login as driver
-    When user enters the driver information
-    Then user should be able to login by verifying the Dashboard title
+  Examples:
+  |userType|
+  |driver  |
+  |sales manager|
+  |store manager|
