@@ -11,7 +11,7 @@ public class VytrackLoginPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    
+
     @FindBy(id = "_submit")
     public WebElement loginButton;
 
