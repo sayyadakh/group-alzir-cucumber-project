@@ -11,22 +11,6 @@ public class VytrackLoginPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(id="prependedInput")
-    public WebElement usernameInput;
-
-
-    @FindBy(id="prependedInput2")
-    public WebElement passwordInput;
-
-    @FindBy(name = "_submit")
-    public WebElement loginButton;
-
-    public void login(String userNameStr, String passwordStr) {
-        usernameInput.sendKeys(userNameStr);
-        passwordInput.sendKeys(passwordStr);
-        loginButton.click();
-        // verification that we logged
-    }
 
     @FindBy(id = "_submit")
     public WebElement loginButton;
