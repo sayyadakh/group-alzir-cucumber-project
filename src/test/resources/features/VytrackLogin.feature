@@ -10,5 +10,9 @@ Feature:Users should be able to login
 @wip
   Scenario Outline: Verify login with different user types
     When user logged in as "<userType>"
-    # When user logged in with username as "user1" and password "UserUser123"
+      Examples:
+      |userType     |
+      |driver       |
+      |store manager|
+      |sales manager|
 

@@ -2,6 +2,7 @@ package com.alzir.step_definitions;
 
 import com.alzir.pages.VytrackLoginPage;
 import com.alzir.utilities.BrowserUtils;
+import com.alzir.utilities.ConfigurationReader;
 import com.alzir.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -18,23 +19,25 @@ public class VytrackLogin_StepDefinitions {
 
     @Given("user is on the login page")
     public void user_is_on_the_login_page() {
-        Driver.getDriver().get("https://qa.xfleetsolutions.com/user/login");
+        Driver.getDriver().get(ConfigurationReader.getProperty("vyTrackUrl"));
     }
-    @When("user enters the driver information")
-    public void user_enters_the_driver_information() {
-        vytrackLoginPage.login("user1","UserUser123");
+    @When("user logged in as {string}")
+    public void userLoggedInAs(String userType) {
+        String username = null;
+        String password = null;
+
+        if(userType.equalsIgnoreCase("driver")){
+            username = ConfigurationReader.getProperty("driver_username");
+            password = ConfigurationReader.getProperty("password");
+        }else if(userType.equalsIgnoreCase("store manager")) {
+            username = ConfigurationReader.getProperty("store_manager_username");
+            password = ConfigurationReader.getProperty("password");
+        }else if(userType.equalsIgnoreCase("sales manager")){
+            username = ConfigurationReader.getProperty("sales_manager_username");
+            password = ConfigurationReader.getProperty("password");
+        }
+
+        VytrackLoginPage loginPage = new VytrackLoginPage();
+        loginPage.login(username,password);
     }
-
-
-    @Then("user should be able to login by verifying the Dashboard title")
-    public void userShouldBeAbleToLoginByVerifyingTheDashboardTitle() {
-        String expectedTitle = "Dashboard";
-        BrowserUtils.sleep(8);
-        String actualTitle = Driver.getDriver().getTitle();
-//        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
-//        wait.until(ExpectedConditions.titleIs(expectedTitle));
-        Assert.assertEquals(expectedTitle, actualTitle);
-
-
     }
-}
