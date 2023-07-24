@@ -28,6 +28,6 @@ public class VytrackLoginPage {
         this.loginButton.click();
     }
 
-
+    
 
 }
