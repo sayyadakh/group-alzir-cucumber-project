@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class VytrackDashboardPage {
+public class VytrackDashboardPage extends BasePage {
 
     public VytrackDashboardPage(){
         PageFactory.initElements(Driver.getDriver(),this);
