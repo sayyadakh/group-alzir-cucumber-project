@@ -1,11 +1,10 @@
-@KORHAN
+@smoke
 Feature: user should be able to use "Tags" filter under 'Fleet-Vehicles' page
   User Story: As a user, I should be able to use "Tags" filter under 'Fleet-Vehicles' page
 
   Scenario Outline: Login as a userType
     When user is on the login page
     And user logged in as "<userType>"
-    When user is on dashboard page
     And user hover over on Fleet module
     And user click on vehicles button
     And user select tags filter
@@ -15,5 +14,5 @@ Feature: user should be able to use "Tags" filter under 'Fleet-Vehicles' page
 
     Examples:
       |userType|
-      |driver  |
+      |store manager  |
       |sales Manager|

@@ -1,5 +1,5 @@
+@smoke
 Feature: As a user, I should be able to access to the help page
-
 
   Scenario: Verify user can access to the help page
 

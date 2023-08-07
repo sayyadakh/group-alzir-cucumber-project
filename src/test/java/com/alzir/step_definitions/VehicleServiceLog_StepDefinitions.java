@@ -39,6 +39,7 @@ public class VehicleServiceLog_StepDefinitions {
 
     @Then("verify user sees {string} message")
     public void verify_user_sees_message(String expectedMessage) {
+        BrowserUtils.sleep(5);
          Assert.assertEquals(expectedMessage,vehicleServiceLogPage.message.getText());
     }
 

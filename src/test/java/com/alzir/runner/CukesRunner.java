@@ -11,12 +11,13 @@ import org.junit.runner.RunWith;
                 "pretty",
                 "html:target/cucumber-reports.html",
                 "rerun:target/rerun.txt",
-                "me.jvt.cucumber.report.PrettyReports:target/cucumber"
+                "me.jvt.cucumber.report.PrettyReports:target/cucumber",
+                "json:target/cucumber.json"
         },
         features = "src/test/resources/features",
         glue = "com/alzir/step_definitions",
         dryRun = false,
-        tags = "@Mikail",
+        tags = "@smoke",
         publish = true // generating a report with public link
         //, monochrome = true // change the color in teh console
 

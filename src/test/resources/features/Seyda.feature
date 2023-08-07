@@ -1,4 +1,4 @@
-@seyda
+@smoke
 
 Feature: User should be able to create a vehicle service log
   User story: As a user, I should be able to Create a vehicle services logs.
