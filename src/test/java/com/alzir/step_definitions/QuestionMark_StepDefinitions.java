@@ -14,8 +14,6 @@ public class QuestionMark_StepDefinitions {
 
     @Given("user clicks the question mark \\(get help)")
     public void user_clicks_the_question_mark_get_help() {
-        Driver.getDriver().get("https://qa.xfleetsolutions.com/user/login");
-        vytrackLoginPage.login("user1","UserUser123");
         vytrackDashboardPage.questionMark.click();
 
     }
