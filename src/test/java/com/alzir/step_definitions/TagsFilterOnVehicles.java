@@ -38,7 +38,7 @@ public class TagsFilterOnVehicles {
     public void user_select_is_any_of_on_filer_options() {
         vytrackVehiclesPage.tagsAll.click();
         vytrackVehiclesPage.isAnyOfBtn.click();
-        vytrackVehiclesPage.isAnyOf.click();
+       // vytrackVehiclesPage.isAnyOf.click();
 
     }
     @Then("user select compact value")
