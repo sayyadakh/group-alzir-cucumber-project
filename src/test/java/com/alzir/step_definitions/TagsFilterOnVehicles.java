@@ -7,6 +7,7 @@ import com.alzir.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
@@ -36,13 +37,13 @@ public class TagsFilterOnVehicles {
     @Then("user select is any of on filer options")
     public void user_select_is_any_of_on_filer_options() {
         vytrackVehiclesPage.tagsAll.click();
+        vytrackVehiclesPage.isAnyOfBtn.click();
         vytrackVehiclesPage.isAnyOf.click();
 
     }
     @Then("user select compact value")
     public void user_select_compact_value() {
-        vytrackVehiclesPage.inputVehicleType.sendKeys("compact");
-        vytrackVehiclesPage.updateBtn.click();
+        vytrackVehiclesPage.inputVehicleType.sendKeys("compact",Keys.ENTER);
     }
     @Then("user sees all the compact tagged vehicles on the page")
     public void user_sees_all_the_compact_tagged_vehicles_on_the_page() {
