@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class VytrackDashboardPage {
+public class VytrackDashboardPage extends BasePage {
 
     public VytrackDashboardPage(){
         PageFactory.initElements(Driver.getDriver(),this);
@@ -20,9 +20,11 @@ public class VytrackDashboardPage {
     @FindBy(xpath = "//span[@class='title title-level-1']")
     public List<WebElement> allTopModules;
 
+    @FindBy(linkText = "Vehicles")
+    public WebElement vehicleBtn;
+
     @FindBy(xpath = "//span[.='Vehicle Contracts']")
     public WebElement vehicleContracts;
-
 
 
 }
