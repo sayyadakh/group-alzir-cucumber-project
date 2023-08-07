@@ -1,4 +1,4 @@
-@wip
+@smoke
 Feature: Modules for Driver as DataTable
 
 
