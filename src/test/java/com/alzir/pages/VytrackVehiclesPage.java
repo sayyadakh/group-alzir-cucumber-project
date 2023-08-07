@@ -25,10 +25,12 @@ public class VytrackVehiclesPage {
     @FindBy(xpath = "//div[@class='filter-item oro-drop']/div[1]")
     public WebElement tagsAll;
 
-    @FindBy(linkText = "is any of")
+    @FindBy(xpath ="//button[@class='btn dropdown-toggle']")
+    public WebElement isAnyOfBtn;
+    @FindBy(xpath = "//a[text()='is any of']")
     public WebElement isAnyOf;
 
-    @FindBy(xpath = "//input[@id='s2id_autogen4']")
+    @FindBy(xpath = "//input[@class='select2-input select2-default']")
     public WebElement inputVehicleType;
 
     @FindBy(xpath = "//div[@id='select2-drop']//ul//li")
