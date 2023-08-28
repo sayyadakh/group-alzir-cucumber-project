@@ -1,4 +1,4 @@
-package com.alzir.pages;
+package com.alzir.pages.VytrackPages;
 
 import com.alzir.utilities.Driver;
 import org.openqa.selenium.WebElement;

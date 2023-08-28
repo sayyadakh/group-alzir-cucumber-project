@@ -1,6 +1,7 @@
-package com.alzir.pages;
+package com.alzir.pages.VytrackPages;
 
 import com.alzir.utilities.BrowserUtils;
+import com.alzir.utilities.DB_Util;
 import com.alzir.utilities.Driver;
 import org.junit.Assert;
 import org.openqa.selenium.By;

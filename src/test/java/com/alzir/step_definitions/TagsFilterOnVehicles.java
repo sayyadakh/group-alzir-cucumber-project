@@ -1,7 +1,7 @@
 package com.alzir.step_definitions;
 
-import com.alzir.pages.VytrackDashboardPage;
-import com.alzir.pages.VytrackVehiclesPage;
+import com.alzir.pages.VytrackPages.VytrackDashboardPage;
+import com.alzir.pages.VytrackPages.VytrackVehiclesPage;
 import com.alzir.utilities.BrowserUtils;
 import com.alzir.utilities.Driver;
 import io.cucumber.java.en.Then;
@@ -9,9 +9,6 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class TagsFilterOnVehicles {
     VytrackDashboardPage vytrackDashboardPage = new VytrackDashboardPage();

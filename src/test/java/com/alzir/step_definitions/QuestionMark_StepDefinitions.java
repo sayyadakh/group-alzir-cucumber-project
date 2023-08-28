@@ -1,7 +1,7 @@
 package com.alzir.step_definitions;
 
-import com.alzir.pages.VytrackDashboardPage;
-import com.alzir.pages.VytrackLoginPage;
+import com.alzir.pages.VytrackPages.VytrackDashboardPage;
+import com.alzir.pages.VytrackPages.VytrackLoginPage;
 import com.alzir.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
