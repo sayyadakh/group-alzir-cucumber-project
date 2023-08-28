@@ -1,17 +1,11 @@
 package com.alzir.step_definitions;
 
-import com.alzir.pages.AllVehicleContractPage;
-import com.alzir.pages.VytrackDashboardPage;
+import com.alzir.pages.VytrackPages.AllVehicleContractPage;
+import com.alzir.pages.VytrackPages.VytrackDashboardPage;
 import com.alzir.utilities.BrowserUtils;
-import com.alzir.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.devtools.v85.network.model.DataReceived;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class AllVehicleContract_StepDefinitions {
 

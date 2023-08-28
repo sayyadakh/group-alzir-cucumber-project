@@ -1,6 +1,6 @@
 package com.alzir.step_definitions;
 
-import com.alzir.pages.VytrackDashboardPage;
+import com.alzir.pages.VytrackPages.VytrackDashboardPage;
 import io.cucumber.java.en.When;
 
 public class VerifySubmoduleHeaderText_StepDefinitions {

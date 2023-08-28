@@ -1,10 +1,8 @@
 package com.alzir.step_definitions;
 
-import com.alzir.pages.VehicleServiceLogPage;
+import com.alzir.pages.VytrackPages.VehicleServiceLogPage;
 import com.alzir.utilities.BrowserUtils;
-import com.alzir.utilities.ConfigurationReader;
 import com.alzir.utilities.Driver;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;

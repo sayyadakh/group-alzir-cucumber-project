@@ -1,11 +1,8 @@
 package com.alzir.step_definitions;
 
-import com.alzir.pages.VytrackDashboardPage;
-import com.alzir.pages.VytrackLoginPage;
+import com.alzir.pages.VytrackPages.VytrackDashboardPage;
 import com.alzir.utilities.BrowserUtils;
-import com.alzir.utilities.ConfigurationReader;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 
