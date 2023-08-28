@@ -1,17 +1,10 @@
 package com.alzir.step_definitions;
 
-import com.alzir.pages.VytrackLoginPage;
-import com.alzir.utilities.BrowserUtils;
+import com.alzir.pages.VytrackPages.VytrackLoginPage;
 import com.alzir.utilities.ConfigurationReader;
 import com.alzir.utilities.Driver;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class VytrackLogin_StepDefinitions {
 
