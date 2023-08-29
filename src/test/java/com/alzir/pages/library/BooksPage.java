@@ -44,4 +44,16 @@ public class BooksPage extends BasePage{
         String xpath = "//td[3][.='" + book + "']/../td/a";
         return Driver.getDriver().findElement(By.xpath(xpath));
     }
+
+    @FindBy(xpath = "//a[@class='btn btn-primary btn-sm  ']")
+    public WebElement borrowBookButton;
+
+    @FindBy(xpath = "//table[@id='borrowed_list']/tbody/tr[last()]/td[starts-with(text(), 'RETURNED')]")
+    public WebElement lastAddedBookIsReturned;
+
+    @FindBy(xpath = "//table[@id='borrowed_list']/tbody/tr[last()]/td[2]")
+    public WebElement borrowedBookName;
+
+
+
 }
